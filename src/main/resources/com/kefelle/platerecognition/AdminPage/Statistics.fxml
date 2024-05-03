@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1720.0" stylesheets="@../assets/styles/menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kefelle.platerecognition.MenuController">
+    <children>
+        <AnchorPane layoutX="-2.0" layoutY="-3.0" prefHeight="960.0" prefWidth="405.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a2a2a" height="60.0" layoutX="83.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" width="326.0" />
+                <Circle fill="#2a2a2a" layoutX="85.0" layoutY="565.0" radius="30.0" stroke="#2a2a2a" strokeType="INSIDE" />
+                <ImageView fitHeight="126.0" fitWidth="130.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/images/crs.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="74.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Home" onMouseClicked="#changeToHome">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Admin Profile" onMouseClicked="#changeToProfile">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Lists" onMouseClicked="#changeToLists">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Statistics" style="-fx-fill: rgba(217, 217, 217, 1);" onMouseClicked="#changeToStatistics">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="User Manual" onMouseClicked="#changeToManual">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="825.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Contact" onMouseClicked="#changeToContact">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="400.0" prefHeight="960.0" prefWidth="1320.0" style="-fx-background-color: rgba(42, 42, 42, 1);" />
+    </children>
+</AnchorPane>

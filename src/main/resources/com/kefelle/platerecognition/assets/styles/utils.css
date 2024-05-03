@@ -1,0 +1,10 @@
+.btn{
+    -fx-fit-to-width: 1800px;
+    -fx-pref-width: 175px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 14;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+    -fx-text-fill: white;
+}

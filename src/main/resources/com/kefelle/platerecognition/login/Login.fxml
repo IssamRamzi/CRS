@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="947.0" prefWidth="1720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kefelle.platerecognition.LogRegController">
+   <children>
+      <AnchorPane layoutX="-11.0" layoutY="-4.0" prefHeight="961.0" prefWidth="953.0" styleClass="background" stylesheets="@../assets/styles/login.css">
+         <children>
+            <Text layoutX="92.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" styleClass="txt" text="Sign in" textAlignment="CENTER">
+               <font>
+                  <Font name="Poppins Bold" size="42.0" />
+               </font>
+            </Text>
+            <TextField layoutX="91.0" layoutY="367.0" prefHeight="56.0" prefWidth="411.0" promptText="Please enter your username" fx:id="loginUsername" styleClass="textField" />
+            <TextField layoutX="88.0" layoutY="496.0" prefHeight="56.0" prefWidth="411.0" promptText="Please enter your password" fx:id="loginPassword" styleClass="textField" />
+            <Text fill="WHITE" layoutX="384.0" layoutY="713.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" styleClass="alrReg" text="Not Registered yet ?" onMouseClicked="#changeToReg">
+               <font>
+                  <Font name="Poppins Regular" size="28.0" />
+               </font>
+            </Text>
+            <Button layoutX="73.0" layoutY="673.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="199.0" styleClass="btn" stylesheets="@../assets/styles/login.css" text="Submit" textFill="#721d1d" onMouseClicked="#getLogin">
+               <font>
+                  <Font name="Poppins Bold" size="28.0" />
+               </font>
+            </Button>
+            <Label layoutX="92.0" layoutY="317.0" text="Username">
+               <font>
+                  <Font name="Poppins Regular" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="447.0" text="Password">
+               <font>
+                  <Font name="Poppins Regular" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="971.0" fitWidth="807.0" layoutX="929.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/car2.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

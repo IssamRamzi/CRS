@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kefelle.platerecognition.MenuController">
+   <children>
+      <AnchorPane prefHeight="960.0" prefWidth="420.0" style="-fx-background-color: #392467;">
+         <children>
+            <ImageView fitHeight="158.0" fitWidth="180.0" layoutX="112.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/crs.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="200.0" onMouseClicked="#changeToUsers" prefHeight="42.0" prefWidth="420.0">
+               <children>
+                  <Text fill="#ffe5e5" layoutX="108.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users">
+                     <font>
+                        <Font name="Poppins ExtraBold" size="32.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="79.0" fitWidth="32.0" layoutX="43.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/user.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="300.0" onMouseClicked="#changeToPlates" prefHeight="42.0" prefWidth="420.0">
+               <children>
+                  <Text fill="#ffe5e5" layoutX="108.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plates">
+                     <font>
+                        <Font name="Poppins Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="79.0" fitWidth="32.0" layoutX="43.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/plate.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="875.0" prefHeight="42.0" prefWidth="420.0">
+               <children>
+                  <Text fill="#ffe5e5" layoutX="101.0" layoutY="31.0" onMouseClicked="#close" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+                     <font>
+                        <Font name="Poppins Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="45.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="400.0" onMouseClicked="#changeToStats" prefHeight="42.0" prefWidth="420.0">
+               <children>
+                  <Text fill="#ffe5e5" layoutX="108.0" layoutY="29.0" onMouseClicked="#changeToStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics">
+                     <font>
+                        <Font name="Poppins Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="79.0" fitWidth="32.0" layoutX="43.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/stats.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="500.0" onMouseClicked="#changeToManuel" prefHeight="42.0" prefWidth="420.0">
+               <children>
+                  <Text fill="#ffe5e5" layoutX="108.0" layoutY="29.0" onMouseClicked="#changeToManuel" strokeType="OUTSIDE" strokeWidth="0.0" text="Manual">
+                     <font>
+                        <Font name="Poppins Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="79.0" fitWidth="33.0" layoutX="43.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/manual.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Separator layoutX="50.0" layoutY="142.0" prefHeight="30.0" prefWidth="321.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="420.0" prefHeight="960.0" prefWidth="1300.0" style="-fx-background-color: #F3F8FF;">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="1300.0" style="-fx-background-color: #AC87C5;">
+               <children>
+                  <Text fill="#ffe5e5" layoutX="582.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users">
+                     <font>
+                        <Font name="Poppins ExtraBold" size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="scrollPane" layoutX="24.0" layoutY="329.0" prefHeight="611.0" prefWidth="1251.0" />
+            <Button layoutX="1075.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#modifyUser" styleClass="buttons" stylesheets="@../assets/styles/menu.css" text="Modify" />
+            <TextField fx:id="searchField" layoutX="25.0" layoutY="240.0" prefHeight="50.0" prefWidth="293.0" promptText="Search Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="45.0" fitWidth="60.0" layoutX="321.0" layoutY="240.0" onMouseClicked="#searchUser" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/search2.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="875.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#deleteUser" styleClass="buttons" stylesheets="@../assets/styles/menu.css" text="Remove" />
+            <Button layoutX="675.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#addNewUser" styleClass="buttons" stylesheets="@../assets/styles/menu.css" text="Add" />
+            <Button layoutX="475.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#displayUsers" styleClass="buttons" stylesheets="@../assets/styles/menu.css" text="Display" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

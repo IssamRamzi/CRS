@@ -1,0 +1,43 @@
+.link{
+    -fx-cursor: hand;
+    -fx-underline: true;
+    -fx-padding: 10px;
+}
+
+.link:focused{
+    -fx-text-fill: red;
+}
+
+.txtField{
+    -fx-background-color :  #c0c0c0;
+    -fx-text-fill: Black;
+    -fx-font-weight: bold;
+    -fx-font-size: 26px;
+}
+.btn{
+    -fx-background-color: #D9D9D9;
+    -fx-fit-to-width: 1800px;
+    -fx-pref-width: 130px;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+
+}
+.buttons {
+    -fx-background-color:  #AC87C5;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffe5e5;
+}
+.linkto{
+    -fx-background-color: #27ad32;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffe5e5;
+}

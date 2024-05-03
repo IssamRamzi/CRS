@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="1720.0" stylesheets="@../assets/styles/menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kefelle.platerecognition.MenuController">
+    <children>
+        <AnchorPane layoutX="-2.0" layoutY="-3.0" prefHeight="960.0" prefWidth="405.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a2a2a" height="60.0" layoutX="83.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" width="326.0" />
+                <Circle fill="#2a2a2a" layoutX="85.0" layoutY="440.0" radius="30.0" stroke="#2a2a2a" strokeType="INSIDE" />
+                <ImageView fitHeight="126.0" fitWidth="130.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/images/crs.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="74.0" layoutY="200.0" onMouseClicked="#changeToHome" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Home">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="325.0" onMouseClicked="#changeToProfile" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Admin Profile">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="450.0" onMouseClicked="#changeToLists" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: rgba(217, 217, 217, 1);" styleClass="link" text="Lists">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="575.0" onMouseClicked="#changeToStatistics" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Statistics">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="700.0" onMouseClicked="#changeToManual" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="User Manual">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text layoutX="74.0" layoutY="825.0" onMouseClicked="#changeToContact" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link" text="Contact">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="400.0" prefHeight="960.0" prefWidth="1320.0" style="-fx-background-color: rgba(42, 42, 42, 1);">
+         <children>
+            <AnchorPane layoutX="147.0" layoutY="80.0" prefHeight="105.0" prefWidth="1100.0" style="-fx-background-color: D8FBFB; -fx-background-radius: 60px; -fx-opacity: 0.2;" />
+            <AnchorPane layoutX="131.0" layoutY="50.0" prefHeight="105.0" prefWidth="1100.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 60px;">
+               <children>
+                  <TextField fx:id="searchField" layoutX="40.0" layoutY="14.0" prefHeight="79.0" prefWidth="866.0" promptText="search person or car registration ID" style="-fx-background-radius: 60;" styleClass="txtField" stylesheets="@../assets/styles/menu.css">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="79.0" fitWidth="60.0" layoutX="996.0" layoutY="24.0" onKeyPressed="#searchUserKeyBoard" onMouseClicked="#searchUser" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@../assets/images/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="scrollPane" layoutX="164.0" layoutY="219.0" prefHeight="720.0" prefWidth="1080.0" />
+            <Button layoutX="21.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#displayUsers" styleClass="btn" text="Display" />
+            <Button layoutX="21.0" layoutY="408.0" mnemonicParsing="false" onMouseClicked="#addNewUser" styleClass="btn" text="Add" />
+            <Button layoutX="21.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#modifyUser" styleClass="btn" text="Modify" />
+            <Button layoutX="21.0" layoutY="564.0" mnemonicParsing="false" onMouseClicked="#deleteUser" styleClass="btn" text="Remove" />
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

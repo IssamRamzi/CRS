@@ -1,0 +1,28 @@
+.background{
+    -fx-background-color : #2a2a2a;
+}
+.txt{
+    -fx-fill: #8FB7F2;
+}
+.textField{
+    -fx-background-color:rgba(255, 253, 253, 0.2);
+    -fx-font-size: 26;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    -fx-font-weight: bold;
+}
+.alrReg{
+    -fx-text-fill: rgba(216, 251, 251, 1);
+}
+.btn{
+    -fx-text-fill: rgba(255,255,255,1);
+    -fx-background-color:rgba(143, 183, 242, 1);
+    -fx-min-width: 60px;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.label{
+    -fx-text-fill: rgba(149, 206, 196, 1);
+}
